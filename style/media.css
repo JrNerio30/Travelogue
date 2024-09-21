@@ -1,0 +1,76 @@
+@media screen and (min-width: 768px) {
+  /* MENU LINKS */
+  .menu-links{
+    display: block;
+    text-decoration: none;
+    color: rgb(117, 116, 116);
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+  }
+
+  /* MENU LINKS HOVER EFFECT */
+  .menu-links:hover{
+    color: black;
+  }
+
+  /* SIDE MENU */
+  .side-bar{
+    display: none;
+  }
+
+  /* HAMBURGER BUTTON */
+  .hamburger-btn{
+    display: none;
+  }
+
+  /* HERO TITLE */
+  .hero-title{
+    margin-inline: 0;
+  }
+
+  /* HERO PROFILE */
+  .hero-profile{
+    margin-inline: 0;
+  }
+
+  /* HERO IMAGE */
+  .hero-image{
+    margin: 0;
+  }
+
+  /* BANFF IMAGE */
+  .banff-image{
+    margin: 0rem;
+  }
+
+  /* BANFF DESCRIPTION */
+  .banff-description{
+    margin: 1rem 0 1rem 0;
+  }
+
+  /* WATERTON IMAGE */
+  .waterton-image{
+    margin: 0rem;
+  }
+
+  /* WATERTON DESCRIPTION */
+  .waterton-description{
+    margin: 1rem 0 1rem 0;
+  }
+
+  /* DRUMHELLER IMAGE */
+  .drumheller-image{
+    margin: 0rem;
+  }
+
+  /* DRUMHELLER DESCRIPTION */
+  .drumheller-description{
+    margin: 1rem 0 1rem 0;
+  }
+
+}
+
+@media screen and (min-width: 1200) {
+
+}
