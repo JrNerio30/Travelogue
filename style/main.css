@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Playfair Display";
+}
+
+/* NAVIGATION MENU STYLES */
+
+/* NAV */
+.nav{
+  background-color: white;
+  position: fixed;
+  height: 6vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  display: flex;
+  border: 1px solid rgb(217, 217, 217);
+  z-index: 2;
+}
+
+/* NAV LOGO */
+.nav-logo{
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* MENU */
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* MENU ITEMS */
+.menu-items{
+  list-style: none;
+}
+
+/* MENU LINKS */
+.menu-links{
+  display: none;
+}
+
+/* SIDE MENU */
+/* NAV Side Bar */
+.side-bar{
+  height: 100vh;
+  position: absolute;
+  top: 2.9rem;
+  right: 0;
+  width: 0%;
+  transition: all 800ms;
+  border: 1px solid rgb(217, 217, 217);
+  border-top: none;
+  background-color: white;
+}
+/* NAV Side Bar Visible */
+.side-bar.visible{
+  width: 50%;
+}
+
+/* NAV Side Menu */
+.nav-side-menu{
+  display: flex;
+  flex-direction: column; 
+  padding: 2rem;
+  gap: 3rem;
+}
+
+/* NAV Side Links */
+.side-menu-links{
+  color: black;
+  text-decoration: none;
+  transition: all 200ms;
+  font-family: sans-serif;
+}
+
+/* HAMBURGER BUTTON */
+.hamburger-btn{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+/* HAMBURGER BUTTON TEXT */
+.hamburger-text{
+  display: none;
+}
+
+/* HAMBURGER LINES */
+.hamburger-lines{
+  width: 3rem;
+  height: 0.2rem;
+  background-color: black;
+}
+
+/* HAMBURGER LINE 2 */
+.hamburger-lines:nth-child(3){
+  width: 2rem;
+  height: 0.2rem;
+  align-self: flex-end;
+}
+
+/* HAMBURGER LINE 4 */
+.hamburger-lines:nth-child(5){
+  width: 2rem;
+  height: 0.2rem;
+  align-self: flex-end;
+}
+
+/* HERO */
+.hero{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HERO CONTAINER */
+.hero-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* HERO ITEMS */
+.hero-items{
+  list-style: none;
+}
+
+/* HERO TITLE */
+.hero-title{
+  font-weight: 800;
+  font-size: clamp(1.5rem, 2.5vw, 2.9vw); 
+  background-color: #e8f5da;
+  max-width: max-content;
+  margin-inline: 1rem;
+  line-height: 170%;
+}
+
+/* HERO PROFILE */
+.hero-profile{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-inline: 1rem;
+}
+
+
+/* HERO PROFILE */
+.profile-picture{
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* PROFILE ABOUT */
+.profile-about{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* PROFILE NAME */
+.profile-name{
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+/* PROFILE RELEASE */
+.profile-release{
+  color: #6b6b6b;
+  font-size: 0.8rem;
+}
+
+/* HERO IMAGE */
+.hero-image{
+  margin: 1rem;
+  width: 100%;
+  max-width: 45rem;
+  height: auto;
+}
+
+/* HERO IMAGE CAPTION */
+.hero-image-caption{
+  color: #6b6b6b;
+  font-size: .8125rem;
+  text-align: center;
+  padding-top: 0.75rem;
+}
+
+/* HERO IMAGE CAPTION LINKS */
+.caption-links{
+  color: #6b6b6b;
+}
+
+
+/* MAIN */
+.main{
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* MAIN DESCRIPTION */
+.main-description{
+  max-width: 59ch;
+  line-height: 170%;
+  margin: 1rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* BANFF */
+.banff{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+/* BANFF FIGURE */
+.banff-figure{
+  margin-bottom: 3rem;
+}
+
+/* BANFF IMAGE */
+.banff-image{
+  margin: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+/* BANFF IMAGE CAPTION */
+.banff-image-caption{
+  text-align: center;
+  color: #6b6b6b;
+  font-size: .8125rem;
+  padding-top: 0.75rem;
+  height: auto;
+}
+
+/* BANFF DESCRIPTION */
+.banff-description{
+  max-width: 59ch;
+  line-height: 170%;
+  margin: 1rem ;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* LETTER "B" FROM BANFF */
+.b-banff{
+  font-size: 50px;
+  padding-right: 0.3rem;
+}
+
+/* WATERTON */
+.waterton{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+/* waterton FIGURE */
+.waterton-figure{
+  margin-bottom: 3rem;
+}
+
+/* waterton IMAGE */
+.waterton-image{
+  margin: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+/* waterton IMAGE CAPTION */
+.waterton-image-caption{
+  text-align: center;
+  color: #6b6b6b;
+  font-size: .8125rem;
+  padding-top: 0.75rem;
+  height: auto;
+}
+
+/* waterton DESCRIPTION */
+.waterton-description{
+  max-width: 59ch;
+  line-height: 170%;
+  margin: 1rem ;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* LETTER "W" FROM waterton */
+.w-waterton{
+  font-size: 50px;
+  padding-right: 0.3rem;
+}
+
+/* DRUMHELLER */
+.drumheller{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+/* drumheller FIGURE */
+.drumheller-figure{
+  margin-bottom: 3rem;
+}
+
+/* drumheller IMAGE */
+.drumheller-image{
+  margin: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+/* drumheller IMAGE CAPTION */
+.drumheller-image-caption{
+  text-align: center;
+  color: #6b6b6b;
+  font-size: .8125rem;
+  padding-top: 0.75rem;
+  height: auto;
+}
+
+/* drumheller DESCRIPTION */
+.drumheller-description{
+  max-width: 59ch;
+  line-height: 170%;
+  margin: 1rem ;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* LETTER "D" FROM drumheller */
+.d-drumheller{
+  font-size: 50px;
+  padding-right: 0.3rem;
+}
