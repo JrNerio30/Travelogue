@@ -12,6 +12,11 @@
   </head>
   <body>  
     <!-- NAVIGATION BAR -->
+    <!-- 
+      Here is my navigation menu section.
+      I created two navigation menu, one for a larger display(menu) 720px - 1200px and
+      one for a smaller display(side-bar) max 720px.
+    -->
     <nav class="nav">
       <a href="#home" class="nav-logo">Travelogue</a>
       <ul class="menu">
@@ -19,6 +24,7 @@
         <li class="menu-items"><a class="menu-links" href="#banff">Banff</a></li>
         <li class="menu-items"><a class="menu-links" href="#waterton">Waterton</a></li>
         <li class="menu-items"><a class="menu-links" href="#drumheller">Drumheller</a></li>
+        <li class="menu-items"><a class="menu-links" href="#highlights">Highlights</a></li>
       </ul>
       <section class="side-bar">
         <ul class="nav-side-menu">
@@ -26,6 +32,7 @@
           <li class="side-menu-items"><a class="side-menu-links" href="#banff">Banff</a></li>
           <li class="side-menu-items"><a class="side-menu-links" href="#waterton">Waterton</a></li>
           <li class="side-menu-items"><a class="side-menu-links" href="#drumheller">Drumheller</a></li>
+          <li class="menu-items"><a class="menu-links" href="#highlights">Highlights</a></li>
         </ul>
       </section>
       <button class="hamburger-btn">
@@ -147,7 +154,57 @@
           among ancient dinosaur fossils, Drumheller’s rugged beauty is unlike anywhere else in Alberta.
         </p>
     </section>
+
+    <!-- TABLE SECTION -->
+    <section class="table-section" id="table">
+         <h2 class="table-title">
+           Top Attractions and Highlights of Banff, Waterton, and Drumheller
+         </h2>
+         <section class="table-body">
+           <table class="table" id="highlightsTable">
+             <thead>
+               <tr>
+                 <th>Destination</th>
+                 <th>Key Attractions</th>
+                 <th>Best Hiking Trails</th>
+                 <th>Unique Features</th>
+                 <th>Best Time to Visit
+                  <button class="sort-btn"><i class="fa-solid fa-sort"><span class="sort-text">sort</span></i></button>
+                 </th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>Banff</td>
+                 <td>Lake Louise, Bow River, Banff Springs Hotel</td>
+                 <td>Tunnel Mountain, Sulphur Mountain</td>
+                 <td>Stunning mountain views, hot springs</td>
+                 <td>Year-round (summer for hiking, winter for skiing)</td>
+               </tr>
+               <tr>
+                 <td>Waterton</td>
+                 <td>Waterton Lake, Cameron Falls, Red Rock Canyon</td>
+                 <td>Bear's Hump, Crypt Lake</td>
+                 <td>Less crowded, wildflowers, mountain lakes</td>
+                 <td>Summer and early fall</td>
+               </tr>
+               <tr>
+                 <td>Drumheller</td>
+                 <td>Royal Tyrrell Museum, Hoodoos, Horseshoe Canyon</td>
+                 <td>Horseshoe Canyon, Hoodoo Trail</td>
+                 <td>Unique Badlands landscape, dinosaur fossils</td>
+                 <td>Spring and fall (for milder weather)</td>
+               </tr>
+             </tbody>
+           </table>  
+         </section>
+    </section>
+
     <!-- FOOTER SECTION -->
+     <footer class="footer" id="highlights">
+        <p class="copyright"></p>
+     </footer>
     <script src="./script/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/879ba98a23.js" crossorigin="anonymous"></script>
   </body>
 </html>
