@@ -3,6 +3,15 @@
    License: none (public domain)
 */
 
+
+/* 
+	This "reset.css" file is for removing default browser styles that can vary between browsers, 
+	ensuring consistency across different platforms. 
+
+	I've used this in every personal or school project of mine because it helps me clean things up easily with styling
+
+*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,7 +32,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
   scroll-behavior: smooth;
-  box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
