@@ -362,3 +362,111 @@ body{
   font-size: 50px;
   padding-right: 0.3rem;
 }
+
+/* TABLE SECTION */
+.table-section{
+  min-height: 30rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* TABLE TITLE */
+.table-title{
+  font-weight: 800;
+  font-size: clamp(1.5rem, 2.5vw, 2.9vw); 
+  background-color: #e8f5da;
+  max-width: 29ch;
+  margin-inline: 1rem;
+  line-height: 170%;
+  margin-top: 5rem;
+}
+
+/* 
+  TABLE BODY:
+    Overflow: auto; is use here because I don't know any other way to make it responsive, other than this.
+    The purpose of this is when it shrank to a smaller size, it won't affect the overall responsiveness of the website.
+    the table-body section itself well become scrollable horizontally once it shrunk to a small display.
+*/
+.table-body{
+  max-height: 89%;
+  overflow: auto; 
+  margin-top: 1rem;
+}
+
+/* TABLE */
+.table{
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  position: relative;
+  max-width: 40%;
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.15);
+  margin: 1rem auto;
+}
+
+/* MAIN Table Header */
+.table thead tr{
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.15);
+  text-align: left;
+  line-height: 170%;
+}
+
+.table tbody tr{
+  line-height: 170%;
+}
+
+/* MAIN Table Cells */
+.table th{
+  padding: 1.75rem 2rem 1.75rem 2rem; 
+}
+
+.table td{
+  padding: 1.75rem 2rem 1.75rem 2rem; 
+  min-width: 12.1rem;
+}
+
+/* 
+  MAIN Second Table Body:
+  Only selecting the second row of the table to make the background color to gray.
+*/
+
+.table tbody tr:nth-child(2){
+  background-color: #f4f0f0;
+}
+
+/* TABLE SORT BUTTON */
+.sort-btn{
+  position: absolute;
+  top: 1.80rem;
+  right: 0.3rem;  
+  font-size: 1.275rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* SORT TEXT */
+.sort-text{
+  display: none;
+}
+
+/* FOOTER */
+.footer{
+  margin-top: 5rem;
+  height: 6vh;
+  background-color: transparent;
+  border-top: #6b6b6b 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* COPYRIGHT FOOTER */
+.copyright{
+  color: #6b6b6b;
+  font-size: 0.9rem;
+}
